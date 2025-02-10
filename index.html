@@ -39,7 +39,7 @@
         <div class="row">
             <div class="columns">
                 <div class="left">
-                    <img src="headshot-gray-background.png" class="headshot" alt="headshot">
+                    <img src="assets\headshot-gray-background.png" class="headshot" alt="headshot">
                 </div>
                 <div class="right">
                     <blockquote style="border-left: 4px solid #f0a202;
@@ -53,7 +53,7 @@
                         excited to tackle new challenges.</blockquote>
                     <div class="button-container">
                         <button>
-                            <a href="Daniel French Resume.pdf" target="_blank">My Resume</a>
+                            <a href="assets\Daniel French Resume.pdf" target="_blank">My Resume</a>
                         </button>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                 <!-- Card 1: Website Screenshot -->
                 <div class="card">
                     <a href="https://www.savingsanely.com" target="_blank">
-                        <img src="Site Images\saving sanely thumbnail.png" alt="Website Screenshot" class="card-media">
+                        <img src="assets\saving sanely thumbnail.png" alt="Website Screenshot" class="card-media">
                     </a>
                     <div class="card-content">
                         <a href="https://www.savingsanely.com" class="savingsanely">
@@ -129,7 +129,20 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <div>
+        <form action="YOUR_GETFORM_ENDPOINT" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Send Message</button>
+        </form>
     </div>
     <footer>
         <div class="social-icons">
