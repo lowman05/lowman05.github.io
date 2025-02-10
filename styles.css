@@ -7,15 +7,12 @@ html {
 .hero-text,
 .social-icons-header {
     max-width: 1200px;
-    /* The container will never be wider than 1200px */
     width: 90%;
-    /* But it will shrink to fit smaller viewports */
     margin: 0 auto;
-    /* Center it horizontally */
 }
 
 body {
-    background-color:#f8f8f8;
+    background-color: #f8f8f8;
 }
 
 header {
@@ -24,21 +21,16 @@ header {
 }
 
 
-.social-icons-header{
+.social-icons-header {
     display: flex;
     padding: 10px;
 }
 
-
-
-@media screen and (max-width: 600px){
-    .social-icons-header{
+@media screen and (max-width: 600px) {
+    .social-icons-header {
         justify-content: center;
     }
 }
-
-
-
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,8 +54,8 @@ body {
     position: relative;
 }
 
-@media screen and (max-width: 600px){
-    .hero-image{
+@media screen and (max-width: 600px) {
+    .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Site Images/portfolio hero preferred.png");
     }
 }
@@ -77,7 +69,7 @@ body {
 .button-container {
     display: flex;
     gap: 10px;
-    position: relative;        
+    position: relative;
 }
 
 
@@ -87,7 +79,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     border: #ffffff 1px solid;
-    width:110px;
+    width: 110px;
 }
 
 .button-container button:hover {
@@ -120,7 +112,7 @@ body {
     align-items: center;
 }
 
-.row .button-container{
+.row .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,44 +133,32 @@ body {
     }
 }
 
-/* Container for the cards */
-
-
-
 
 .card-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    /* space between cards */
     flex-wrap: wrap;
-    /* allows cards to wrap on smaller screens */
     margin-bottom: 48px;
 }
 
-@media screen and (max-width: 600px){
-    .card-container{
+@media screen and (max-width: 600px) {
+    .card-container {
         gap: 30px;
     }
 }
 
-/* Each card style */
 .card {
     background-color: #333333;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
     flex: 1;
-    /* allow cards to take equal space */
     display: flex;
     flex-direction: column;
     min-width: 280px;
-    /* ensures cards don't become too narrow */
 }
 
-
-
-/* Media content (image or video) fills the width of the card */
 .card-media,
 .video-container iframe {
     display: block;
@@ -190,7 +170,6 @@ body {
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    /* 16:9 Aspect Ratio */
     height: 0;
     overflow: hidden;
 }
@@ -203,8 +182,6 @@ body {
     height: 100%;
 }
 
-
-/* Card content styling */
 .card-content {
     display: flex;
     flex-direction: column;
@@ -213,17 +190,15 @@ body {
     color: #ffffff;
 }
 
-
 .card-content .fab {
     font-size: 40px;
-    color: #CCCCCC; /* Light gray for best contrast */
+    color: #CCCCCC;
     transition: color 0.3s ease-in-out;
 }
 
 .card-content .fab:hover {
-    color: #F9C715; /* Gold highlight on hover */
+    color: #F9C715;
 }
-
 
 .card-footer {
     text-align: center;
@@ -247,7 +222,6 @@ body {
     font-size: 14px;
     position: absolute;
     bottom: 150%;
-    /* Moves it above the icon */
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -283,8 +257,6 @@ footer {
     text-decoration: none;
 }
 
-.card .social-icons .fab:hover
- {
+.card .social-icons .fab:hover {
     color: #f0a202;
 }
-
