@@ -1,3 +1,5 @@
+console.log("Form endpoint:", GETFORM_ENDPOINT);
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("#contact-form");
 
