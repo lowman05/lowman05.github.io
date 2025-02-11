@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("#contact-form");
 
+    // Set the action dynamically from the config.js
+    form.action = GETFORM_ENDPOINT;
+
     if (form) {
         form.addEventListener("submit", async function (event) {
             event.preventDefault(); // Prevent default form submission
@@ -16,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             formData.append("g-recaptcha-response", recaptchaResponse); // Add reCAPTCHA to form data
 
             try {
-                const response = await fetch(GETFORM_ENDPOINT, {
+                const response = await fetch(form.action, {
                     method: "POST",
                     body: formData,
                 });
