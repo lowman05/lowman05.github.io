@@ -262,7 +262,7 @@ footer {
     color: #f0a202;
 }
 
-/* form {
+form {
     max-width: 400px;
     margin: auto;
     display: flex;
@@ -290,4 +290,4 @@ button {
 }
 button:hover {
     background-color: #0056b3;
-} */
+}

@@ -130,20 +130,18 @@
             </div>
         </div>
     </div>
-    <!-- <div>
-        <form action="YOUR_GETFORM_ENDPOINT" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <div>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
         
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <!-- reCAPTCHA Widget -->
+            <div class="g-recaptcha" data-sitekey="6LfYK4IqAAAAAFxA2xLUgaepeTE6o7QKKImoCdDM"></div>
         
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        
-            <button type="submit">Send Message</button>
+            <button type="submit">Send</button>
         </form>
-    </div> -->
+    </div>
     <footer>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/daniel-french-2a989968/" target="_blank"><i
@@ -153,6 +151,9 @@
         </div>
 
     </footer>
+    <script src="config.js"></script>
+    <script src="index.js"></script>
+
 </body>
 
 </html>
