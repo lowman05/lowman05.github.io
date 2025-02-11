@@ -92,6 +92,24 @@ body {
     color: #000000;
 }
 
+.button-container .my-resume {
+    background-color: #f0a202;
+    border: #f0a202 1px solid;
+}
+
+.button-container .my-resume>a {
+    color: black;
+}
+
+.button-container .my-resume:hover>a {
+    color: white;
+}
+
+.button-container .my-resume:hover {
+    border: white 1px solid;
+    background: none;
+}
+
 .headshot {
     border-radius: 50%;
 }
@@ -263,31 +281,43 @@ footer {
 }
 
 form {
-    max-width: 400px;
-    margin: auto;
     display: flex;
+    margin: auto;
     flex-direction: column;
+    margin-bottom: 48px;
 }
+
+form h1 {
+    text-align: left;
+}
+
 label {
     font-weight: bold;
     margin-top: 10px;
 }
-input, textarea {
+
+input,
+textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 button {
     margin-top: 15px;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #f0a202;
     color: white;
-    border: none;
+    border: #f0a202 1px solid;
     border-radius: 5px;
     cursor: pointer;
+    border-radius: 20px;
 }
+
 button:hover {
-    background-color: #0056b3;
+    border: #333333 1px solid;
+    background: none;
+    color: #333333;
 }
