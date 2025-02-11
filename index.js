@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.addEventListener("submit", async function (event) {
             event.preventDefault(); // Prevent default form submission
 
-            const recaptchaResponse = await grecaptcha.execute('YOUR_SITE_KEY', { action: 'submit' });
+            const recaptchaResponse = await grecaptcha.execute('6LfrYdMqAAAAAMsjaJzIEOgJSPHRRKeN2H9s7Uyv', { action: 'submit' });
 
             if (!recaptchaResponse) {
                 alert("Please complete the reCAPTCHA.");
