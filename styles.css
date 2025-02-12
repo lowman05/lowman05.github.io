@@ -69,45 +69,86 @@ body {
 
 .button-container {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     position: relative;
+   
 }
 
 
-.button-container button {
-    background: none;
+.button-container button { 
     border-radius: 5px;
     padding-top: 10px;
-    padding-bottom: 10px;
-    border: #ffffff 1px solid;
+    padding-bottom: 10px;    
     width: 110px;
+    font-size: inherit;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
-.button-container button:hover {
+.projects{
     background-color: #f0a202;
-    border: #f0a202 1px solid;
+    color: black;
+    border: 1px solid  #f0a202;
+   
 }
 
-.button-container button:hover>a {
-    color: #000000;
+.projects a{
+    color: black;
+    transition: color 0.3s ease;
 }
 
-.button-container .my-resume {
+.projects:hover{
+    background-color: #995F02;
+    border: 1px solid #995F02;
+}
+
+.projects:hover a {
+    color: white; 
+}
+
+.resume{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.resume a {
+    color: white;
+    transition: color 0.3s ease; /* Ensures smooth color transition */
+}
+
+.resume:hover {
     background-color: #f0a202;
-    border: #f0a202 1px solid;
-}
-
-.button-container .my-resume>a {
+    border:1px solid #f0a202;
     color: black;
 }
 
-.button-container .my-resume:hover>a {
-    color: white;
+.resume:hover a {
+    color: #000000;
 }
 
-.button-container .my-resume:hover {
-    border: white 1px solid;
-    background: none;
+.my-resume {
+    background-color: #f0a202;
+    color: black;
+    border: 1px solid  #f0a202;
+}
+
+.my-resume a {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.my-resume:hover a {
+    color: white; 
+}
+
+.my-resume:hover {
+    background-color: #995F02;
+    border: 1px solid #995F02;
 }
 
 .headshot {
@@ -269,7 +310,16 @@ footer {
 }
 
 .social-icons .fab,
-.social-icons-header .fab {
+.social-icons-header .fab{
+    font-size: 30px;
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.social-icons-header .fas{
+ 
+
     font-size: 30px;
     margin: 0 10px;
     color: #000;
@@ -314,6 +364,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     border-radius: 20px;
+    
 }
 
 button:hover {
