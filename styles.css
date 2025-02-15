@@ -192,8 +192,13 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-    .columns .left {
-        padding-right: 1em;
+    .columns {
+        flex-direction: column;
+    }
+
+    .columns,
+    .left {
+        align-items: center;
     }
 }
 
@@ -408,7 +413,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: inherit;
-
+    background-color: #f5f6f7;
 }
 
 
