@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
@@ -21,7 +20,7 @@
             <a href="https://github.com/lowman05" target="_blank"><i class="fab fa-github"></i></a>
             <a href="#contact-form" class="tooltip">
                 <i class="fas fa-envelope"></i>
-                <span class="tooltip-text">Contact Daniel</span>
+                <span class="email-tooltip-text">Contact Daniel</span>
             </a>
         </div>
     </header>
@@ -31,47 +30,52 @@
             <!-- <img src="Site Images\headshot.png" class="headshot"> -->
             <h3>Software Developer</h3>
             <div class="button-container">
-                <button class="resume">
-                    <a href="assets\Daniel French Resume.pdf" target="_blank">Resume</a>
+                <!-- Hero Section Button -->
+                <button class="resume hero-button">
+                    <a href="assets/Daniel French Resume.pdf" target="_blank">Resume</a>
                 </button>
+
+                <!-- Columns Div Button -->
                 <button class="projects">
                     <a href="#latest-projects">Projects</a>
                 </button>
+
             </div>
         </div>
     </div>
     <div class="content">
+
         <h2>About Daniel</h2>
-        <div class="row">
-            <div class="columns">
-                <div class="left">
-                    <img src="assets\headshot-gray-background.png" class="headshot" alt="headshot">
-                </div>
-                <div class="right">
-                    <blockquote style="border-left: 4px solid #f0a202;
-                    padding-left: 15px;
-                    margin: 20px 0;
-                    font-style: italic;
-                    color: #ffffff;"> I'm passionate about learning, solving problems, and turning ideas into engaging
-                        digital experiences. I love building responsive WordPress™ websites—customizing themes and
-                        plugins for unique features—and I have a strong foundation in object-oriented programming with
-                        C#. I thrive in open, collaborative environments where information flows freely, and I'm always
-                        excited to tackle new challenges.</blockquote>
-                    <div class="button-container">
-                        <button class="my-resume">
-                            <a href="assets\Daniel French Resume.pdf" target="_blank">Resume</a>
-                        </button>
-                    </div>
+        <!-- Columns Div -->
+        <div class="columns">
+            <div class="left">
+                <img src="assets\headshot-gray-background.png" class="headshot" alt="headshot">
+            </div>
+            <div class="right">
+                <blockquote
+                    style="border-left: 4px solid #f0a202; padding-left: 15px; margin: 20px 0; font-style: italic; color: #ffffff;">
+                    I'm passionate about learning, solving problems, and turning ideas into engaging digital
+                    experiences. I love building responsive WordPress™ websites—customizing themes and plugins for
+                    unique features—and I have a strong foundation in object-oriented programming with C#. I thrive in
+                    open, collaborative environments where information flows freely, and I'm always excited to tackle
+                    new challenges.
+                </blockquote>
+                <div class="button-container">
+                    <button class="columns-button resume">
+                        <a href="assets\Daniel French Resume.pdf" target="_blank">Resume</a>
+                    </button>
                 </div>
             </div>
         </div>
+
+
         <div class="card-container-background">
             <h2 id="latest-projects">Latest Projects</h2>
             <div class="card-container">
                 <!-- Card 1: Website Screenshot -->
                 <div class="card">
                     <a href="https://www.savingsanely.com" target="_blank">
-                        <img src="assets\saving sanely thumbnail.png" alt="Website Screenshot" class="card-media">
+                        <img src="assets/saving sanely thumbnail.png" alt="Website Screenshot" class="card-media">
                     </a>
                     <div class="card-content">
                         <a href="https://www.savingsanely.com" class="savingsanely">
@@ -135,15 +139,46 @@
                 </div>
             </div>
         </div>
-        <div>
-            <form action="https://getform.io/f/bgdpyqja" id="contact-form" method="post">
-                <h2>Get in Touch</h2>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <input type="hidden" name="_gotcha" style="display:none !important">
-                <button class="submit" type="submit">Send</button>
-            </form>
+        <h2>
+            Get in Touch
+        </h2>
+        <div class="contact-columns">
+            <div class="contact-left">
+                <ul>
+                    <li>
+                        WordPress™
+                    </li>
+                    <li>
+                        HTML
+                    </li>
+                    <li>
+                        CSS
+                    </li>
+                    <li>
+                        JavaScript
+                    </li>
+                    <li>
+                        C#
+                    </li>
+                    <li>
+                        Object Oriented Programming
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-right">
+
+                <form action="https://getform.io/f/bgdpyqja" id="contact-form" method="post">
+
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+                    <div class="button-container button-right-align">
+                        <button class="submit" type="submit">Send</button>
+                    </div>
+                </form>
+
+            </div>
         </div>
     </div>
     <footer>
