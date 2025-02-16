@@ -172,11 +172,12 @@ header {
 
 
 /* Columns */
+
 .columns,
 .contact-columns {
     display: flex;
     align-items: flex-start;
-    background-color: #333333;
+    background: linear-gradient(to right, #333333, #555555);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -210,7 +211,7 @@ header {
 }
 
 .columns .right {
-    flex: 80%;
+    flex: 70%;
 }
 
 .contact-left {
@@ -222,12 +223,9 @@ header {
 }
 
 .contact-right {
-    flex: 70%;
+    flex: 50%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-right: 2em;
+    flex-direction: column;      
     padding-top: 1em;
 }
 
@@ -270,7 +268,7 @@ header {
 }
 
 .card {
-    background-color: #333333;
+    background:linear-gradient(to right, #333333, #555555);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
@@ -371,7 +369,7 @@ header {
 
 /* List Styles */
 ul {
-    padding: 0;
+    padding: 0px;
 }
 
 ul li {
