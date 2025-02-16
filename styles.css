@@ -58,7 +58,7 @@ header {
 
 @media screen and (max-width: 600px) {
     .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/portfolio hero preferred.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("assets/portfolio hero preferred.png");
     }
 }
 
@@ -169,6 +169,18 @@ header {
 }
 
 
+@media screen and (max-width: 600px) {
+    .contact-right button {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .button-right-align {
+        width: 100%;
+    }
+
+}
+
 
 
 /* Columns */
@@ -225,7 +237,7 @@ header {
 .contact-right {
     flex: 50%;
     display: flex;
-    flex-direction: column;      
+    flex-direction: column;
     padding-top: 1em;
 }
 
@@ -268,7 +280,7 @@ header {
 }
 
 .card {
-    background:linear-gradient(to right, #333333, #555555);
+    background: linear-gradient(to right, #333333, #555555);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
@@ -412,8 +424,20 @@ textarea {
     border-radius: 5px;
     font-family: inherit;
     background-color: #f5f6f7;
+    color: green;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: #333333;
+    opacity: 1;
+}
+
+input,
+textarea {
+    font-size: 16px;
+    font-family: inherit;
+}
 
 /* Footer */
 footer {
