@@ -58,7 +58,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    
+
 }
 
 @media screen and (max-width: 600px) {
@@ -429,7 +429,7 @@ textarea {
     border-radius: 5px;
     font-family: inherit;
     background-color: #f5f6f7;
-    
+
 }
 
 input::placeholder,
