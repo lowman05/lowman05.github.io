@@ -13,7 +13,8 @@ h3::before,
 h4::before {
     content: "";
     display: block;
-    height: 73px; /* Adjust based on header height */
+    height: 73px;
+    /* Adjust based on header height */
     margin-top: -73px;
     visibility: hidden;
 }
@@ -60,9 +61,9 @@ header {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("assets/portfolio hero preferred.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("assets/hero-image-4_3.png");
     height: 70vh;
-    background-position: center;
+    background-position: center 10%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -70,11 +71,14 @@ header {
     justify-content: flex-start;
     position: relative;
 
+
 }
 
 @media screen and (max-width: 600px) {
     .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("assets/portfolio hero preferred.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("assets/hero-image-4_3.png");
+        height: 50vh;
+
     }
 }
 
@@ -239,11 +243,13 @@ header {
 }
 
 .columns .right {
-    flex: 70%;
+    flex: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-left {
-    flex: 30%;
+    flex: 20%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -255,6 +261,7 @@ header {
     display: flex;
     flex-direction: column;
     padding-top: 1em;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -424,6 +431,7 @@ ul li::before {
     flex-direction: column;
     width: 100%;
     align-items: flex-end;
+
 }
 
 label {
