@@ -7,6 +7,17 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1::before,
+h2::before,
+h3::before,
+h4::before {
+    content: "";
+    display: block;
+    height: 73px; /* Adjust based on header height */
+    margin-top: -73px;
+    visibility: hidden;
+}
+
 body {
     background-color: #f8f8f8;
 }
