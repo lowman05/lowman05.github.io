@@ -76,8 +76,9 @@ header {
 
 @media screen and (max-width: 600px) {
     .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("assets/hero-image-4_3.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/hero-image-4_3.png");
         height: 50vh;
+
 
     }
 }
