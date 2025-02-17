@@ -474,7 +474,9 @@ footer {
 }
 
 .social-icons .fab,
-.social-icons-header .fab {
+.fas,
+.social-icons-header .fab,
+.fas {
     font-size: 30px;
     margin: 0 10px;
     color: #000;
