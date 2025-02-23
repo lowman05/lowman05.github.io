@@ -7,15 +7,15 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 h1::before,
 h2::before,
 h3::before,
 h4::before {
     content: "";
     display: block;
-    height: 73px;
-    /* Adjust based on header height */
-    margin-top: -73px;
+    height: 87px;
+    margin-top: -87px;
     visibility: hidden;
 }
 
@@ -25,8 +25,7 @@ body {
 
 /* Container Width */
 .content,
-.hero-text,
-.social-icons-header {
+.hero-text, .header-inner {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
@@ -37,21 +36,59 @@ header {
     display: flex;
     background-color: #f0a202;
     border-bottom: 3px solid #222222;
-    padding: 20px;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 20px;
 }
 
-/* Social Icons Header */
+.header-inner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.site-logo{
+    border-radius: 5px;
+}
+
+@media screen and (max-width:600px) {
+    .site-logo{
+        display: none;
+    }   
+}
+
+/* @media screen and (max-width: 600px){
+    .header-inner{
+        flex-direction: column;
+    }
+} */
+
+
+.site-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 80px;
+}
+
 .social-icons-header {
     display: flex;
+    justify-content:end;
+    max-width: 50%;
 }
 
 @media screen and (max-width: 600px) {
-    .social-icons-header {
+    .header-inner {
         justify-content: center;
+        max-width: 100%;
     }
 }
 
