@@ -25,7 +25,8 @@ body {
 
 /* Container Width */
 .content,
-.hero-text, .header-inner {
+.hero-text,
+.header-inner {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
@@ -56,14 +57,24 @@ header {
     overflow: hidden;
 }
 
-.site-logo{
-    border-radius: 5px;
+.site-logo {
+    border-radius: 3px;
+}
+
+.logo img {
+    transform: scale(0.625);
+
+}
+
+.social-icons-header img {
+    transform: scale(0.625);
+
 }
 
 @media screen and (max-width:600px) {
-    .site-logo{
+    .logo {
         display: none;
-    }   
+    }
 }
 
 /* @media screen and (max-width: 600px){
@@ -81,7 +92,7 @@ header {
 
 .social-icons-header {
     display: flex;
-    justify-content:end;
+    justify-content: end;
     max-width: 50%;
 }
 
