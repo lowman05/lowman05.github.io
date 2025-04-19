@@ -103,8 +103,8 @@ header {
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("assets/hero-image-4_3.png");
-    height: 70vh;
-    background-position: center 10%;
+    height: 90vh;
+    background-position: center 20%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
