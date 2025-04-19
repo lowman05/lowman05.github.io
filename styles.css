@@ -58,10 +58,12 @@ header {
     align-items: center;
 }
 
+
+
 .social-icons-header img {
     transform: scale(0.625);
-
 }
+
 
 @media screen and (max-width:600px) {
     .logo {
@@ -78,6 +80,8 @@ header {
 .logo img {
     max-height: 60px;
 }
+
+
 
 .social-icons-header {
     display: flex;
@@ -107,16 +111,12 @@ header {
     align-items: center;
     justify-content: flex-start;
     position: relative;
-
-
 }
 
 @media screen and (max-width: 600px) {
     .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/hero-image-4_3.png");
         height: 50vh;
-
-
     }
 }
 
@@ -248,7 +248,7 @@ header {
     display: flex;
     align-items: flex-start;
     background: linear-gradient(to right, #333333, #555555);
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 48px;
@@ -307,7 +307,6 @@ header {
         flex-direction: column;
     }
 
-
     .contact-right {
         padding: 0px;
         width: 100%;
@@ -320,9 +319,6 @@ header {
     .contact-columns .contact-right form {
         align-items: center;
     }
-
-
-
 }
 
 /* Card Container */
@@ -334,16 +330,17 @@ header {
     margin-bottom: 48px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 912px) {
     .card-container {
         gap: 30px;
+        flex-direction: column;
     }
 }
 
 .card {
     background: linear-gradient(to right, #333333, #555555);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
     flex: 1;
     display: flex;
