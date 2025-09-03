@@ -42,6 +42,7 @@ header {
     top: 0;
     z-index: 1;
     padding: 10px;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 600px) {
